@@ -1,0 +1,73 @@
+/media/hdd/jfwang/sOT/TraInf4git/scMultiSim/FiveBranNonSync/RunEB.py:4: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import normalize_path
+2025-09-01 04:58:09.281448: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-09-01 04:58:09.937189: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-12.1/extras/CUPTI/lib64:/usr/lib/x86_64-linux-gnu:/home/jfwang/local/gsl-install/lib:/usr/local/cuda/lib64:/home/jfwang/.local/lib/python3.10/site-packages/nvidia/cudnn/lib
+2025-09-01 04:58:09.937346: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-12.1/extras/CUPTI/lib64:/usr/lib/x86_64-linux-gnu:/home/jfwang/local/gsl-install/lib:/usr/local/cuda/lib64:/home/jfwang/.local/lib/python3.10/site-packages/nvidia/cudnn/lib
+2025-09-01 04:58:09.937362: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+Default hidden dimension: [1, 1, 1]
+Default ot dimension: [1, 2, 3]
+Default data path: ../../data/scMultiSim/FiveBranch_scRNA_pca.npz
+Default time labels: ['time1', 'time2', 'time3', 'time4']
+Default ot dimension: 5
+Default time points: [1, 2, 3, 4]
+Data type: <class 'numpy.lib.npyio.NpzFile'>
+Available keys in npz file: ['time1', 'time2', 'time3', 'time4']
+time point time1 data shape: torch.Size([1430, 5])
+time point time2 data shape: torch.Size([1920, 5])
+time point time3 data shape: torch.Size([3103, 5])
+time point time4 data shape: torch.Size([3547, 5])
+[(tensor([2.0000, 1.8000, 1.6000, 1.4000, 1.2000, 1.0000], device='cuda:0'), tensor([1.0000, 1.2000, 1.4000, 1.6000, 1.8000, 2.0000], device='cuda:0'), tensor([2.0000, 1.8000, 1.6000, 1.4000, 1.2000, 1.0000], device='cuda:0'), tensor([1.0000, 1.2000, 1.4000, 1.6000, 1.8000, 2.0000], device='cuda:0')), (tensor([3.0000, 2.8000, 2.6000, 2.4000, 2.2000, 2.0000], device='cuda:0'), tensor([2.0000, 2.2000, 2.4000, 2.6000, 2.8000, 3.0000], device='cuda:0'), tensor([3.0000, 2.8000, 2.6000, 2.4000, 2.2000, 2.0000, 1.8000, 1.6000, 1.4000,
+        1.2000, 1.0000], device='cuda:0'), tensor([1.0000, 1.2000, 1.4000, 1.6000, 1.8000, 2.0000, 2.2000, 2.4000, 2.6000,
+        2.8000, 3.0000], device='cuda:0')), (tensor([4.0000, 3.8000, 3.6000, 3.4000, 3.2000, 3.0000], device='cuda:0'), tensor([3.0000, 3.2000, 3.4000, 3.6000, 3.8000, 4.0000], device='cuda:0'), tensor([4.0000, 3.8000, 3.6000, 3.4000, 3.2000, 3.0000, 2.8000, 2.6000, 2.4000,
+        2.2000, 2.0000, 1.8000, 1.6000, 1.4000, 1.2000, 1.0000],
+       device='cuda:0'), tensor([1.0000, 1.2000, 1.4000, 1.6000, 1.8000, 2.0000, 2.2000, 2.4000, 2.6000,
+        2.8000, 3.0000, 3.2000, 3.4000, 3.6000, 3.8000, 4.0000],
+       device='cuda:0'))]
+/home/jfwang/miniconda3/envs/SynOT/lib/python3.10/site-packages/torch/optim/lr_scheduler.py:62: UserWarning: The verbose parameter is deprecated. Please use get_last_lr() to access the learning rate.
+  warnings.warn(
+Data type: <class 'numpy.lib.npyio.NpzFile'>
+Available keys in npz file: ['time1', 'time2', 'time3', 'time4']
+time point time1 data shape: torch.Size([1430, 5])
+time point time2 data shape: torch.Size([1920, 5])
+time point time3 data shape: torch.Size([3103, 5])
+time point time4 data shape: torch.Size([3547, 5])
+Epoch 0:   0%|          | 0/3000 [00:00<?, ?it/s]after manifold logdensity loss
+ma:969.8994140625 MB    mma:970.33154296875 MB    mr:1000.0 MB    mmr:1000.0 MB
+after pdf loss
+ma:1170.3017578125 MB    mma:1220.89697265625 MB    mr:1284.0 MB    mmr:1284.0 MB
+after manifold logdensity loss
+ma:3205.22998046875 MB    mma:3205.662109375 MB    mr:3292.0 MB    mmr:3292.0 MB
+after pdf loss
+ma:3447.04541015625 MB    mma:3513.0322265625 MB    mr:3628.0 MB    mmr:3628.0 MB
+after manifold logdensity loss
+ma:5600.5947265625 MB    mma:5601.02685546875 MB    mr:5734.0 MB    mmr:5734.0 MB
+after pdf loss
+ma:5928.2861328125 MB    mma:5997.0234375 MB    mr:6158.0 MB    mmr:6158.0 MB
+Epoch 0:   0%|          | 0/3000 [00:01<?, ?it/s, short=1053946.9583]Avg terminal density loss: 1053946.9583
+Epoch 0:   0%|          | 1/3000 [00:01<1:15:46,  1.52s/it, short=1053946.9583]after manifold logdensity loss
+ma:977.42529296875 MB    mma:7257.55224609375 MB    mr:1016.0 MB    mmr:7708.0 MB
+after pdf loss
+ma:1178.23095703125 MB    mma:7257.55224609375 MB    mr:1292.0 MB    mmr:7708.0 MB
+after manifold logdensity loss
+ma:3213.22607421875 MB    mma:7257.55224609375 MB    mr:3300.0 MB    mmr:7708.0 MB
+after pdf loss
+ma:3455.62109375 MB    mma:7257.55224609375 MB    mr:3656.0 MB    mmr:7708.0 MB
+after manifold logdensity loss
+ma:5608.365234375 MB    mma:7257.55224609375 MB    mr:5742.0 MB    mmr:7708.0 MB
+after pdf loss
+ma:5935.36767578125 MB    mma:7257.55224609375 MB    mr:6166.0 MB    mmr:7708.0 MB
+Epoch 0:   0%|          | 1/3000 [00:02<1:15:46,  1.52s/it, short=969213.4167] Avg terminal density loss: 969213.4167
+Epoch 0:   0%|          | 2/3000 [00:02<1:06:32,  1.33s/it, short=969213.4167]after manifold logdensity loss
+ma:977.42529296875 MB    mma:7263.66943359375 MB    mr:1008.0 MB    mmr:7716.0 MB
+after pdf loss
+ma:1178.18212890625 MB    mma:7263.66943359375 MB    mr:1284.0 MB    mmr:7716.0 MB
+after manifold logdensity loss
+ma:3215.44189453125 MB    mma:7263.66943359375 MB    mr:3300.0 MB    mmr:7716.0 MB
+after pdf loss
+ma:3457.89990234375 MB    mma:7263.66943359375 MB    mr:3644.0 MB    mmr:7716.0 MB
+after manifold logdensity loss
+ma:5611.05615234375 MB    mma:7263.66943359375 MB    mr:5742.0 MB    mmr:7716.0 MB
+after pdf loss
+ma:5938.06640625 MB    mma:7263.66943359375 MB    mr:6166.0 MB    mmr:7716.0 MB
+Epoch 0:   0%|          | 2/3000 [00:03<1:06:32,  1.33s/it, short=957340.0417]
