@@ -1,0 +1,346 @@
+/media/hdd/jfwang/sOT/TraInf4git/scMultiSim/FiveBranSync/RunEB.py:4: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import normalize_path
+2025-09-01 04:19:26.394998: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-09-01 04:19:27.057807: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-12.1/extras/CUPTI/lib64:/usr/lib/x86_64-linux-gnu:/home/jfwang/local/gsl-install/lib:/usr/local/cuda/lib64:/home/jfwang/.local/lib/python3.10/site-packages/nvidia/cudnn/lib
+2025-09-01 04:19:27.057964: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-12.1/extras/CUPTI/lib64:/usr/lib/x86_64-linux-gnu:/home/jfwang/local/gsl-install/lib:/usr/local/cuda/lib64:/home/jfwang/.local/lib/python3.10/site-packages/nvidia/cudnn/lib
+2025-09-01 04:19:27.057982: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+Default hidden dimension: [1, 1, 1]
+Default ot dimension: [1, 2, 3]
+Default data path: ../../data/scMultiSim/FiveBranch_scRNA_pca.npz
+Default time labels: ['time1', 'time2', 'time3', 'time4']
+Default ot dimension: 5
+Default time points: [1, 2, 3, 4]
+Data type: <class 'numpy.lib.npyio.NpzFile'>
+Available keys in npz file: ['time1', 'time2', 'time3', 'time4']
+time point time1 data shape: torch.Size([1430, 5])
+time point time2 data shape: torch.Size([1920, 5])
+time point time3 data shape: torch.Size([3103, 5])
+time point time4 data shape: torch.Size([3547, 5])
+[(tensor([2.0000, 1.8000, 1.6000, 1.4000, 1.2000, 1.0000], device='cuda:0'), tensor([1.0000, 1.2000, 1.4000, 1.6000, 1.8000, 2.0000], device='cuda:0'), tensor([2.0000, 1.8000, 1.6000, 1.4000, 1.2000, 1.0000], device='cuda:0'), tensor([1.0000, 1.2000, 1.4000, 1.6000, 1.8000, 2.0000], device='cuda:0')), (tensor([3.0000, 2.8000, 2.6000, 2.4000, 2.2000, 2.0000], device='cuda:0'), tensor([2.0000, 2.2000, 2.4000, 2.6000, 2.8000, 3.0000], device='cuda:0'), tensor([3.0000, 2.8000, 2.6000, 2.4000, 2.2000, 2.0000, 1.8000, 1.6000, 1.4000,
+        1.2000, 1.0000], device='cuda:0'), tensor([1.0000, 1.2000, 1.4000, 1.6000, 1.8000, 2.0000, 2.2000, 2.4000, 2.6000,
+        2.8000, 3.0000], device='cuda:0')), (tensor([4.0000, 3.8000, 3.6000, 3.4000, 3.2000, 3.0000], device='cuda:0'), tensor([3.0000, 3.2000, 3.4000, 3.6000, 3.8000, 4.0000], device='cuda:0'), tensor([4.0000, 3.8000, 3.6000, 3.4000, 3.2000, 3.0000, 2.8000, 2.6000, 2.4000,
+        2.2000, 2.0000, 1.8000, 1.6000, 1.4000, 1.2000, 1.0000],
+       device='cuda:0'), tensor([1.0000, 1.2000, 1.4000, 1.6000, 1.8000, 2.0000, 2.2000, 2.4000, 2.6000,
+        2.8000, 3.0000, 3.2000, 3.4000, 3.6000, 3.8000, 4.0000],
+       device='cuda:0'))]
+/home/jfwang/miniconda3/envs/SynOT/lib/python3.10/site-packages/torch/optim/lr_scheduler.py:62: UserWarning: The verbose parameter is deprecated. Please use get_last_lr() to access the learning rate.
+  warnings.warn(
+Data type: <class 'numpy.lib.npyio.NpzFile'>
+Available keys in npz file: ['time1', 'time2', 'time3', 'time4']
+time point time1 data shape: torch.Size([1430, 5])
+time point time2 data shape: torch.Size([1920, 5])
+time point time3 data shape: torch.Size([3103, 5])
+time point time4 data shape: torch.Size([3547, 5])
+Epoch 0:   0%|          | 0/3000 [00:00<?, ?it/s]after manifold logdensity loss
+ma:969.8994140625 MB    mma:970.33154296875 MB    mr:1000.0 MB    mmr:1000.0 MB
+after pdf loss
+ma:1170.3017578125 MB    mma:1220.89697265625 MB    mr:1284.0 MB    mmr:1284.0 MB
+sync point cloud pairs
+ma:2494.857421875 MB    mma:2496.57861328125 MB    mr:2612.0 MB    mmr:2612.0 MB
+before sync pdf loss
+ma:2766.12744140625 MB    mma:2787.97412109375 MB    mr:2904.0 MB    mmr:2904.0 MB
+after sync pdf loss
+ma:2995.22607421875 MB    mma:3063.9638671875 MB    mr:3184.0 MB    mmr:3184.0 MB
+after manifold logdensity loss
+ma:3940.60595703125 MB    mma:3941.0380859375 MB    mr:4062.0 MB    mmr:4062.0 MB
+after pdf loss
+ma:4183.04736328125 MB    mma:4249.0341796875 MB    mr:4386.0 MB    mmr:4386.0 MB
+sync point cloud pairs
+ma:5595.3515625 MB    mma:5597.07275390625 MB    mr:5820.0 MB    mmr:5820.0 MB
+before sync pdf loss
+ma:5919.4580078125 MB    mma:5948.80859375 MB    mr:6122.0 MB    mmr:6122.0 MB
+after sync pdf loss
+ma:6149.48291015625 MB    mma:6218.220703125 MB    mr:6402.0 MB    mmr:6402.0 MB
+after manifold logdensity loss
+ma:7125.08203125 MB    mma:7125.51416015625 MB    mr:7288.0 MB    mmr:7288.0 MB
+after pdf loss
+ma:7451.427734375 MB    mma:7520.1650390625 MB    mr:7712.0 MB    mmr:7712.0 MB
+sync point cloud pairs
+ma:8895.22705078125 MB    mma:8896.9482421875 MB    mr:9178.0 MB    mmr:9178.0 MB
+before sync pdf loss
+ma:9353.63330078125 MB    mma:9401.65966796875 MB    mr:9610.0 MB    mmr:9610.0 MB
+after sync pdf loss
+ma:9582.73193359375 MB    mma:9651.4697265625 MB    mr:9890.0 MB    mmr:9890.0 MB
+Epoch 0:   0%|          | 0/3000 [00:01<?, ?it/s, short=1048818.6250]Avg terminal density loss: 1048818.6250
+Epoch 0:   0%|          | 1/3000 [00:01<1:24:13,  1.69s/it, short=1048818.6250]after manifold logdensity loss
+ma:978.4990234375 MB    mma:9678.2080078125 MB    mr:1000.0 MB    mmr:10722.0 MB
+after pdf loss
+ma:1178.728515625 MB    mma:9678.2080078125 MB    mr:1284.0 MB    mmr:10722.0 MB
+sync point cloud pairs
+ma:2502.8154296875 MB    mma:9678.2080078125 MB    mr:2620.0 MB    mmr:10722.0 MB
+before sync pdf loss
+ma:2775.3486328125 MB    mma:9678.2080078125 MB    mr:2916.0 MB    mmr:10722.0 MB
+after sync pdf loss
+ma:3004.447265625 MB    mma:9678.2080078125 MB    mr:3196.0 MB    mmr:10722.0 MB
+after manifold logdensity loss
+ma:3949.970703125 MB    mma:9678.2080078125 MB    mr:4074.0 MB    mmr:10722.0 MB
+after pdf loss
+ma:4193.5712890625 MB    mma:9678.2080078125 MB    mr:4410.0 MB    mmr:10722.0 MB
+sync point cloud pairs
+ma:5604.4033203125 MB    mma:9678.2080078125 MB    mr:5824.0 MB    mmr:10722.0 MB
+before sync pdf loss
+ma:5928.9716796875 MB    mma:9678.2080078125 MB    mr:6146.0 MB    mmr:10722.0 MB
+after sync pdf loss
+ma:6158.99658203125 MB    mma:9678.2080078125 MB    mr:6426.0 MB    mmr:10722.0 MB
+after manifold logdensity loss
+ma:7134.43310546875 MB    mma:9678.2080078125 MB    mr:7312.0 MB    mmr:10722.0 MB
+after pdf loss
+ma:7460.96337890625 MB    mma:9678.2080078125 MB    mr:7736.0 MB    mmr:10722.0 MB
+sync point cloud pairs
+ma:8904.30859375 MB    mma:9678.2080078125 MB    mr:9182.0 MB    mmr:10722.0 MB
+before sync pdf loss
+ma:9360.45361328125 MB    mma:9678.2080078125 MB    mr:9614.0 MB    mmr:10722.0 MB
+after sync pdf loss
+ma:9589.55224609375 MB    mma:9678.2080078125 MB    mr:9894.0 MB    mmr:10722.0 MB
+Epoch 0:   0%|          | 1/3000 [00:02<1:24:13,  1.69s/it, short=932461.9792] Avg terminal density loss: 932461.9792
+Epoch 0:   0%|          | 2/3000 [00:02<1:13:01,  1.46s/it, short=932461.9792]after manifold logdensity loss
+ma:978.4990234375 MB    mma:9684.36865234375 MB    mr:1000.0 MB    mmr:10726.0 MB
+after pdf loss
+ma:1178.728515625 MB    mma:9684.36865234375 MB    mr:1284.0 MB    mmr:10726.0 MB
+sync point cloud pairs
+ma:2502.8154296875 MB    mma:9684.36865234375 MB    mr:2620.0 MB    mmr:10726.0 MB
+before sync pdf loss
+ma:2775.3486328125 MB    mma:9684.36865234375 MB    mr:2916.0 MB    mmr:10726.0 MB
+after sync pdf loss
+ma:3004.447265625 MB    mma:9684.36865234375 MB    mr:3196.0 MB    mmr:10726.0 MB
+after manifold logdensity loss
+ma:3949.970703125 MB    mma:9684.36865234375 MB    mr:4074.0 MB    mmr:10726.0 MB
+after pdf loss
+ma:4193.5712890625 MB    mma:9684.36865234375 MB    mr:4410.0 MB    mmr:10726.0 MB
+sync point cloud pairs
+ma:5604.4033203125 MB    mma:9684.36865234375 MB    mr:5824.0 MB    mmr:10726.0 MB
+before sync pdf loss
+ma:5928.9716796875 MB    mma:9684.36865234375 MB    mr:6146.0 MB    mmr:10726.0 MB
+after sync pdf loss
+ma:6158.99658203125 MB    mma:9684.36865234375 MB    mr:6426.0 MB    mmr:10726.0 MB
+after manifold logdensity loss
+ma:7134.43310546875 MB    mma:9684.36865234375 MB    mr:7312.0 MB    mmr:10726.0 MB
+after pdf loss
+ma:7460.96337890625 MB    mma:9684.36865234375 MB    mr:7736.0 MB    mmr:10726.0 MB
+sync point cloud pairs
+ma:8904.30859375 MB    mma:9684.36865234375 MB    mr:9182.0 MB    mmr:10726.0 MB
+before sync pdf loss
+ma:9360.45361328125 MB    mma:9684.36865234375 MB    mr:9614.0 MB    mmr:10726.0 MB
+after sync pdf loss
+ma:9589.55224609375 MB    mma:9684.36865234375 MB    mr:9894.0 MB    mmr:10726.0 MB
+Epoch 0:   0%|          | 2/3000 [00:04<1:13:01,  1.46s/it, short=1083353.0000]Avg terminal density loss: 1083353.0000
+Epoch 0:   0%|          | 3/3000 [00:04<1:10:01,  1.40s/it, short=1083353.0000]after manifold logdensity loss
+ma:978.4990234375 MB    mma:9684.36865234375 MB    mr:1000.0 MB    mmr:10726.0 MB
+after pdf loss
+ma:1178.728515625 MB    mma:9684.36865234375 MB    mr:1284.0 MB    mmr:10726.0 MB
+sync point cloud pairs
+ma:2502.8154296875 MB    mma:9684.36865234375 MB    mr:2620.0 MB    mmr:10726.0 MB
+before sync pdf loss
+ma:2775.3486328125 MB    mma:9684.36865234375 MB    mr:2916.0 MB    mmr:10726.0 MB
+after sync pdf loss
+ma:3004.447265625 MB    mma:9684.36865234375 MB    mr:3196.0 MB    mmr:10726.0 MB
+after manifold logdensity loss
+ma:3949.970703125 MB    mma:9684.36865234375 MB    mr:4074.0 MB    mmr:10726.0 MB
+after pdf loss
+ma:4193.5712890625 MB    mma:9684.36865234375 MB    mr:4410.0 MB    mmr:10726.0 MB
+sync point cloud pairs
+ma:5604.4033203125 MB    mma:9684.36865234375 MB    mr:5824.0 MB    mmr:10726.0 MB
+before sync pdf loss
+ma:5928.9716796875 MB    mma:9684.36865234375 MB    mr:6146.0 MB    mmr:10726.0 MB
+after sync pdf loss
+ma:6158.99658203125 MB    mma:9684.36865234375 MB    mr:6426.0 MB    mmr:10726.0 MB
+after manifold logdensity loss
+ma:7134.43310546875 MB    mma:9684.36865234375 MB    mr:7312.0 MB    mmr:10726.0 MB
+after pdf loss
+ma:7460.96337890625 MB    mma:9684.36865234375 MB    mr:7736.0 MB    mmr:10726.0 MB
+sync point cloud pairs
+ma:8904.30859375 MB    mma:9684.36865234375 MB    mr:9182.0 MB    mmr:10726.0 MB
+before sync pdf loss
+ma:9360.45361328125 MB    mma:9684.36865234375 MB    mr:9614.0 MB    mmr:10726.0 MB
+after sync pdf loss
+ma:9589.55224609375 MB    mma:9684.36865234375 MB    mr:9894.0 MB    mmr:10726.0 MB
+Epoch 0:   0%|          | 3/3000 [00:05<1:10:01,  1.40s/it, short=990726.5000] Avg terminal density loss: 990726.5000
+Epoch 0:   0%|          | 4/3000 [00:05<1:08:12,  1.37s/it, short=990726.5000]after manifold logdensity loss
+ma:978.4990234375 MB    mma:9684.36865234375 MB    mr:1000.0 MB    mmr:10726.0 MB
+after pdf loss
+ma:1178.728515625 MB    mma:9684.36865234375 MB    mr:1284.0 MB    mmr:10726.0 MB
+sync point cloud pairs
+ma:2502.8154296875 MB    mma:9684.36865234375 MB    mr:2620.0 MB    mmr:10726.0 MB
+before sync pdf loss
+ma:2775.3486328125 MB    mma:9684.36865234375 MB    mr:2916.0 MB    mmr:10726.0 MB
+after sync pdf loss
+ma:3004.447265625 MB    mma:9684.36865234375 MB    mr:3196.0 MB    mmr:10726.0 MB
+after manifold logdensity loss
+ma:3949.970703125 MB    mma:9684.36865234375 MB    mr:4074.0 MB    mmr:10726.0 MB
+after pdf loss
+ma:4193.5712890625 MB    mma:9684.36865234375 MB    mr:4410.0 MB    mmr:10726.0 MB
+sync point cloud pairs
+ma:5604.4033203125 MB    mma:9684.36865234375 MB    mr:5824.0 MB    mmr:10726.0 MB
+before sync pdf loss
+ma:5928.9716796875 MB    mma:9684.36865234375 MB    mr:6146.0 MB    mmr:10726.0 MB
+after sync pdf loss
+ma:6158.99658203125 MB    mma:9684.36865234375 MB    mr:6426.0 MB    mmr:10726.0 MB
+after manifold logdensity loss
+ma:7134.43310546875 MB    mma:9684.36865234375 MB    mr:7312.0 MB    mmr:10726.0 MB
+after pdf loss
+ma:7460.96337890625 MB    mma:9684.36865234375 MB    mr:7736.0 MB    mmr:10726.0 MB
+sync point cloud pairs
+ma:8904.30859375 MB    mma:9684.36865234375 MB    mr:9182.0 MB    mmr:10726.0 MB
+before sync pdf loss
+ma:9360.45361328125 MB    mma:9684.36865234375 MB    mr:9614.0 MB    mmr:10726.0 MB
+after sync pdf loss
+ma:9589.55224609375 MB    mma:9684.36865234375 MB    mr:9894.0 MB    mmr:10726.0 MB
+Epoch 0:   0%|          | 4/3000 [00:06<1:08:12,  1.37s/it, short=969125.4792]Iter 5: short_term_loss=969125.4792
+Iter: 5, running avg loss: 0.0000
+Iter 5: Current Learning Rate: 0.004908817327884231
+----------------------------------
+Epoch 0:   0%|          | 5/3000 [00:06<1:06:56,  1.34s/it, short=969125.4792]after manifold logdensity loss
+ma:978.4990234375 MB    mma:9684.36865234375 MB    mr:1000.0 MB    mmr:10726.0 MB
+after pdf loss
+ma:1178.728515625 MB    mma:9684.36865234375 MB    mr:1284.0 MB    mmr:10726.0 MB
+sync point cloud pairs
+ma:2502.8154296875 MB    mma:9684.36865234375 MB    mr:2620.0 MB    mmr:10726.0 MB
+before sync pdf loss
+ma:2775.3486328125 MB    mma:9684.36865234375 MB    mr:2916.0 MB    mmr:10726.0 MB
+after sync pdf loss
+ma:3004.447265625 MB    mma:9684.36865234375 MB    mr:3196.0 MB    mmr:10726.0 MB
+after manifold logdensity loss
+ma:3949.970703125 MB    mma:9684.36865234375 MB    mr:4074.0 MB    mmr:10726.0 MB
+after pdf loss
+ma:4193.5712890625 MB    mma:9684.36865234375 MB    mr:4410.0 MB    mmr:10726.0 MB
+sync point cloud pairs
+ma:5604.4033203125 MB    mma:9684.36865234375 MB    mr:5824.0 MB    mmr:10726.0 MB
+before sync pdf loss
+ma:5928.9716796875 MB    mma:9684.36865234375 MB    mr:6146.0 MB    mmr:10726.0 MB
+after sync pdf loss
+ma:6158.99658203125 MB    mma:9684.36865234375 MB    mr:6426.0 MB    mmr:10726.0 MB
+after manifold logdensity loss
+ma:7134.43310546875 MB    mma:9684.36865234375 MB    mr:7312.0 MB    mmr:10726.0 MB
+after pdf loss
+ma:7460.96337890625 MB    mma:9684.36865234375 MB    mr:7736.0 MB    mmr:10726.0 MB
+sync point cloud pairs
+ma:8904.30859375 MB    mma:9684.36865234375 MB    mr:9182.0 MB    mmr:10726.0 MB
+before sync pdf loss
+ma:9360.45361328125 MB    mma:9684.36865234375 MB    mr:9614.0 MB    mmr:10726.0 MB
+after sync pdf loss
+ma:9589.55224609375 MB    mma:9684.36865234375 MB    mr:9894.0 MB    mmr:10726.0 MB
+Epoch 0:   0%|          | 5/3000 [00:08<1:06:56,  1.34s/it, short=938801.9271]Avg terminal density loss: 938801.9271
+Epoch 0:   0%|          | 6/3000 [00:08<1:10:55,  1.42s/it, short=938801.9271]after manifold logdensity loss
+ma:978.4990234375 MB    mma:9684.36865234375 MB    mr:1000.0 MB    mmr:10726.0 MB
+after pdf loss
+ma:1178.728515625 MB    mma:9684.36865234375 MB    mr:1284.0 MB    mmr:10726.0 MB
+sync point cloud pairs
+ma:2502.8154296875 MB    mma:9684.36865234375 MB    mr:2620.0 MB    mmr:10726.0 MB
+before sync pdf loss
+ma:2775.3486328125 MB    mma:9684.36865234375 MB    mr:2916.0 MB    mmr:10726.0 MB
+after sync pdf loss
+ma:3004.447265625 MB    mma:9684.36865234375 MB    mr:3196.0 MB    mmr:10726.0 MB
+after manifold logdensity loss
+ma:3949.970703125 MB    mma:9684.36865234375 MB    mr:4074.0 MB    mmr:10726.0 MB
+after pdf loss
+ma:4193.5712890625 MB    mma:9684.36865234375 MB    mr:4410.0 MB    mmr:10726.0 MB
+sync point cloud pairs
+ma:5604.4033203125 MB    mma:9684.36865234375 MB    mr:5824.0 MB    mmr:10726.0 MB
+before sync pdf loss
+ma:5928.9716796875 MB    mma:9684.36865234375 MB    mr:6146.0 MB    mmr:10726.0 MB
+after sync pdf loss
+ma:6158.99658203125 MB    mma:9684.36865234375 MB    mr:6426.0 MB    mmr:10726.0 MB
+after manifold logdensity loss
+ma:7134.43310546875 MB    mma:9684.36865234375 MB    mr:7312.0 MB    mmr:10726.0 MB
+after pdf loss
+ma:7460.96337890625 MB    mma:9684.36865234375 MB    mr:7736.0 MB    mmr:10726.0 MB
+sync point cloud pairs
+ma:8904.30859375 MB    mma:9684.36865234375 MB    mr:9182.0 MB    mmr:10726.0 MB
+before sync pdf loss
+ma:9360.45361328125 MB    mma:9684.36865234375 MB    mr:9614.0 MB    mmr:10726.0 MB
+after sync pdf loss
+ma:9589.55224609375 MB    mma:9684.36865234375 MB    mr:9894.0 MB    mmr:10726.0 MB
+Epoch 0:   0%|          | 6/3000 [00:09<1:10:55,  1.42s/it, short=921880.2917]Avg terminal density loss: 921880.2917
+Epoch 0:   0%|          | 7/3000 [00:09<1:08:54,  1.38s/it, short=921880.2917]after manifold logdensity loss
+ma:978.4990234375 MB    mma:9684.36865234375 MB    mr:1000.0 MB    mmr:10726.0 MB
+after pdf loss
+ma:1178.728515625 MB    mma:9684.36865234375 MB    mr:1284.0 MB    mmr:10726.0 MB
+sync point cloud pairs
+ma:2502.8154296875 MB    mma:9684.36865234375 MB    mr:2620.0 MB    mmr:10726.0 MB
+before sync pdf loss
+ma:2775.3486328125 MB    mma:9684.36865234375 MB    mr:2916.0 MB    mmr:10726.0 MB
+after sync pdf loss
+ma:3004.447265625 MB    mma:9684.36865234375 MB    mr:3196.0 MB    mmr:10726.0 MB
+after manifold logdensity loss
+ma:3949.970703125 MB    mma:9684.36865234375 MB    mr:4074.0 MB    mmr:10726.0 MB
+after pdf loss
+ma:4193.5712890625 MB    mma:9684.36865234375 MB    mr:4410.0 MB    mmr:10726.0 MB
+sync point cloud pairs
+ma:5604.4033203125 MB    mma:9684.36865234375 MB    mr:5824.0 MB    mmr:10726.0 MB
+before sync pdf loss
+ma:5928.9716796875 MB    mma:9684.36865234375 MB    mr:6146.0 MB    mmr:10726.0 MB
+after sync pdf loss
+ma:6158.99658203125 MB    mma:9684.36865234375 MB    mr:6426.0 MB    mmr:10726.0 MB
+after manifold logdensity loss
+ma:7134.43310546875 MB    mma:9684.36865234375 MB    mr:7312.0 MB    mmr:10726.0 MB
+after pdf loss
+ma:7460.96337890625 MB    mma:9684.36865234375 MB    mr:7736.0 MB    mmr:10726.0 MB
+sync point cloud pairs
+ma:8904.30859375 MB    mma:9684.36865234375 MB    mr:9182.0 MB    mmr:10726.0 MB
+before sync pdf loss
+ma:9360.45361328125 MB    mma:9684.36865234375 MB    mr:9614.0 MB    mmr:10726.0 MB
+after sync pdf loss
+ma:9589.55224609375 MB    mma:9684.36865234375 MB    mr:9894.0 MB    mmr:10726.0 MB
+Epoch 0:   0%|          | 7/3000 [00:10<1:08:54,  1.38s/it, short=853865.3646]Avg terminal density loss: 853865.3646
+Epoch 0:   0%|          | 8/3000 [00:11<1:07:43,  1.36s/it, short=853865.3646]after manifold logdensity loss
+ma:978.4990234375 MB    mma:9684.36865234375 MB    mr:1000.0 MB    mmr:10726.0 MB
+after pdf loss
+ma:1178.728515625 MB    mma:9684.36865234375 MB    mr:1284.0 MB    mmr:10726.0 MB
+sync point cloud pairs
+ma:2502.8154296875 MB    mma:9684.36865234375 MB    mr:2620.0 MB    mmr:10726.0 MB
+before sync pdf loss
+ma:2775.3486328125 MB    mma:9684.36865234375 MB    mr:2916.0 MB    mmr:10726.0 MB
+after sync pdf loss
+ma:3004.447265625 MB    mma:9684.36865234375 MB    mr:3196.0 MB    mmr:10726.0 MB
+after manifold logdensity loss
+ma:3949.970703125 MB    mma:9684.36865234375 MB    mr:4074.0 MB    mmr:10726.0 MB
+after pdf loss
+ma:4193.5712890625 MB    mma:9684.36865234375 MB    mr:4410.0 MB    mmr:10726.0 MB
+sync point cloud pairs
+ma:5604.4033203125 MB    mma:9684.36865234375 MB    mr:5824.0 MB    mmr:10726.0 MB
+before sync pdf loss
+ma:5928.9716796875 MB    mma:9684.36865234375 MB    mr:6146.0 MB    mmr:10726.0 MB
+after sync pdf loss
+ma:6158.99658203125 MB    mma:9684.36865234375 MB    mr:6426.0 MB    mmr:10726.0 MB
+after manifold logdensity loss
+ma:7134.43310546875 MB    mma:9684.36865234375 MB    mr:7312.0 MB    mmr:10726.0 MB
+after pdf loss
+ma:7460.96337890625 MB    mma:9684.36865234375 MB    mr:7736.0 MB    mmr:10726.0 MB
+sync point cloud pairs
+ma:8904.30859375 MB    mma:9684.36865234375 MB    mr:9182.0 MB    mmr:10726.0 MB
+before sync pdf loss
+ma:9360.45361328125 MB    mma:9684.36865234375 MB    mr:9614.0 MB    mmr:10726.0 MB
+after sync pdf loss
+ma:9589.55224609375 MB    mma:9684.36865234375 MB    mr:9894.0 MB    mmr:10726.0 MB
+Epoch 0:   0%|          | 8/3000 [00:12<1:07:43,  1.36s/it, short=813713.7812]Avg terminal density loss: 813713.7812
+Epoch 0:   0%|          | 9/3000 [00:12<1:07:09,  1.35s/it, short=813713.7812]after manifold logdensity loss
+ma:978.4990234375 MB    mma:9684.36865234375 MB    mr:1000.0 MB    mmr:10726.0 MB
+after pdf loss
+ma:1178.728515625 MB    mma:9684.36865234375 MB    mr:1284.0 MB    mmr:10726.0 MB
+sync point cloud pairs
+ma:2502.8154296875 MB    mma:9684.36865234375 MB    mr:2620.0 MB    mmr:10726.0 MB
+before sync pdf loss
+ma:2775.3486328125 MB    mma:9684.36865234375 MB    mr:2916.0 MB    mmr:10726.0 MB
+after sync pdf loss
+ma:3004.447265625 MB    mma:9684.36865234375 MB    mr:3196.0 MB    mmr:10726.0 MB
+after manifold logdensity loss
+ma:3949.970703125 MB    mma:9684.36865234375 MB    mr:4074.0 MB    mmr:10726.0 MB
+after pdf loss
+ma:4193.5712890625 MB    mma:9684.36865234375 MB    mr:4410.0 MB    mmr:10726.0 MB
+sync point cloud pairs
+ma:5604.4033203125 MB    mma:9684.36865234375 MB    mr:5824.0 MB    mmr:10726.0 MB
+before sync pdf loss
+ma:5928.9716796875 MB    mma:9684.36865234375 MB    mr:6146.0 MB    mmr:10726.0 MB
+after sync pdf loss
+ma:6158.99658203125 MB    mma:9684.36865234375 MB    mr:6426.0 MB    mmr:10726.0 MB
+after manifold logdensity loss
+ma:7134.43310546875 MB    mma:9684.36865234375 MB    mr:7312.0 MB    mmr:10726.0 MB
+after pdf loss
+ma:7460.96337890625 MB    mma:9684.36865234375 MB    mr:7736.0 MB    mmr:10726.0 MB
+sync point cloud pairs
+ma:8904.30859375 MB    mma:9684.36865234375 MB    mr:9182.0 MB    mmr:10726.0 MB
+before sync pdf loss
+ma:9360.45361328125 MB    mma:9684.36865234375 MB    mr:9614.0 MB    mmr:10726.0 MB
+after sync pdf loss
+ma:9589.55224609375 MB    mma:9684.36865234375 MB    mr:9894.0 MB    mmr:10726.0 MB
