@@ -125,11 +125,11 @@ def get_notebook_args():
     parser.add_argument('--num_samples', type=int, default=200)
     parser.add_argument('--noise_initial_sample', type=float, default=0.35)
     
+    parser.add_argument('--sigma', type=float, default=0.0005)
+    parser.add_argument('--dt', type=float, default=0.2)
+    
     # Method options
-    parser.add_argument('--newmethod', type=bool, default=True)
-    parser.add_argument('--update_secondarySpace', action='store_true')
-    parser.add_argument('--update_selected_data', action='store_true')
-    parser.add_argument('--USE_CKPT', action='store_true')
+
     
     # Directories
     parser.add_argument('--train_dir', type=str, default='./checkpoint')
